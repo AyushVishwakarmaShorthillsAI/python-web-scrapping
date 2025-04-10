@@ -1,0 +1,3 @@
+Job Name : SaaS ERP Lead Techno functional Analyst
+Skills Req : ['erp implementation', 'problem solving', 'analytical thinking', 'technical communication', 'customer service', 'css', 'jquery', 'security', 'html', 'oracle', 'mobile', 'javascript', 'consultant', 'technical consultant']
+

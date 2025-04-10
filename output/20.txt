@@ -1,0 +1,3 @@
+Job Name : Dun & Bradstreet - Manager ,  Engineering  ( R-17648 )
+Skills Req : ['cloud based development', 'hands on software engineering', 'team leadership skills', 'full stack development', 'agile methodologies', 'css', 'spring', 'java', 'j2ee', 'html', 'api', 'web technologies', '.net', 'angularjs', 'fundamentals', 'storage', 'sql', 'git', 'debugging', 'rest', 'operating system', 'spring boot', 'production environment']
+

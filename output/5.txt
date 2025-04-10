@@ -1,0 +1,3 @@
+Job Name : SCM Techno-functional consultant
+Skills Req : ['techno functional expertise', 'troubleshooting capabilities', 'customer interaction skills', 'excellent communication', 'process orientation', 'css', 'orchestration', 'security', 'oracle', 'information management', 'problem solving']
+

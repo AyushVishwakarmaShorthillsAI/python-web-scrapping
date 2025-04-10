@@ -14,7 +14,7 @@ def find_jobs():
     skills_familiar = input('>').strip().lower()
     print(f'Filtering out for : {skills_familiar}\n')
 
-    for job in jobs:
+    for index, job in enumerate(jobs):
         post_time = job.find('span', class_='posting-time')
         if not post_time or post_time.text.strip() != '24h':
             continue
@@ -26,17 +26,25 @@ def find_jobs():
         skill_texts = [skill.text.strip().lower() for skill in skills_req]
 
         if skills_familiar in skill_texts:
-            print(f'Job Name : {job_name}')
+            all_skills=[]
+            # print(f'Job Name : {job_name}')
             print('Skills Req : ', end='')
             for skill in skills_req:
-                print(skill.text.strip(), end=', ')
-            print()
-            print()
+                all_skills.append(skill.text.strip())
+            # print(all_skills)
+
+            # storing the scrapped data into a file
+            with open(f'output/{index}.txt', 'w') as f:
+                f.write(f"Job Name : {job_name}")
+                f.write('\n')
+                f.write(f'Skills Req : {all_skills}')
+                f.write('\n')
+                f.write('\n')
 
 if __name__=='__main__':
     while True:
         find_jobs()
-        print('Wait for 2 second :)')
+        print('Wait for 2 seconds...')
         time.sleep(2)
 
 # NOTE : we can get inside the link of <a> tag and go to a new page and scrap the info present there
