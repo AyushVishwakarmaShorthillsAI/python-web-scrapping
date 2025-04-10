@@ -19,3 +19,22 @@ with open('home.html', 'r') as html_file:
     # since we have a list we need to iterate only each element
     for course in courses:
         print(course.text)         # .text gives the text inside the tag
+
+
+    print()
+    # Now our task will be to print each courses with details
+
+    course_card=soup.find_all('div', class_='card')
+    # print(course_card)
+
+    for x in course_card:
+        name = x.h5.text
+        price = x.a.text.split()[-1]
+
+        # Syntax for Split Method : text.split('seperator')
+        # if no seperator is given => Whitespaces
+
+        print(f"course name : {name}")
+        print(f"course price : {price}")
+
+        # see course price is the last word in the string -> use 'split' method
